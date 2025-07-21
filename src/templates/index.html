@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Cryptocurrency Price Prediction</h1>
+
+    <label for="coinInput">Enter Coin (e.g., btc, eth): </label>
+    <input type="text" id="coinInput" placeholder="btc">
+
+    <label for="daysInput">Days:</label>
+    <input type="number" id="daysInput" placeholder="10">
+
+    <button id="predictButton">Predict</button>
+
+    <h3>Results:</h3>
+    <p id="result"></p>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

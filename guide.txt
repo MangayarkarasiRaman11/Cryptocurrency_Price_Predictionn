@@ -1,0 +1,5 @@
+To run
+
+step1:cd src
+
+step2:streamlit run crypto.py
